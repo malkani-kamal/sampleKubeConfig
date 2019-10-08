@@ -30,7 +30,7 @@ spec:
       port: 3000
       targetPort: 3000
 ---
-apiVersion: extensions/v1
+apiVersion: apps/v1
 kind: Ingress
 metadata:
   name: testapp-ingress
