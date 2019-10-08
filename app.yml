@@ -4,6 +4,8 @@ metadata:
   name: testapp-deployment
 spec:
   replicas: 1
+  selector:
+    app: testapp 
   template:
     metadata:
       labels:
@@ -34,6 +36,8 @@ metadata:
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
+  selector:
+    app: testapp
   rules:
   - http:
       paths:
