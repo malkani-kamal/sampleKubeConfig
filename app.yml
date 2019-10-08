@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: testapp
-        image: kamalimage
+        image: kamalimage:1.0
         ports:
         - containerPort: 3000
 ---
